@@ -12,45 +12,6 @@ export default function Quality() {
     const [clickedElements, setClickedElements] = useState(new Set());
 
 
-    // CHANGE ELEMENTS POSITION
-    useEffect(() => {
-        const setInitialPositions = () => {
-            elementsRef.current.forEach((element, index) => {
-                if (element) {
-                    const rect = element.getBoundingClientRect();
-                    initialPositions.current[index] = { x: rect.left, y: rect.top };
-                }
-            });
-        };
-
-        const moveElementRandomly = () => {
-            const windowWidth = window.innerWidth;
-            const windowHeight = window.innerHeight;
-
-            elementsRef.current.forEach((element, index) => {
-                if (element && !clickedElements.has(index)) {
-                    const initialPosition = initialPositions.current[index];
-                    let x, y;
-
-                    do {
-                        x = initialPosition.x + (Math.random() * 400 - 200);
-                        y = initialPosition.y + (Math.random() * 400 - 200);
-                    } while (x < 200 || x > windowWidth - element.offsetWidth -200 || y < 200 || y > windowHeight - element.offsetHeight -400);
-
-                    element.style.transform = `translate(${x - initialPosition.x}px, ${y - initialPosition.y}px)`;
-                }
-            });
-        };
-
-        // Set initial positions once after the first render
-        setInitialPositions();
-
-        const interval = setInterval(moveElementRandomly, 1000); // Change position every second
-
-        return () => clearInterval(interval); // Cleanup interval on component unmount
-    }, [data,clickedElements]); // Re-run effect if data changes
-
-
     // LOAD ERROR AND LOADING FOR THE FETCH
     if (loading) return <><Loader></Loader></>;
     if (error) return <p>Error: {error.message}</p>;
@@ -72,25 +33,31 @@ export default function Quality() {
 
     return <>
         <ButtonBack link="/about"></ButtonBack>
-        {data.map((quality,index)=>(
-            <div
-                key={quality.id}
-                ref={el => (elementsRef.current[index] = el)}
-                className={`moving-element ${clickedElements.has(index) ? 'clicked' : ''}`}
-                onClick={() => {
-                    handleClick(index);
-                }}
-            >
-                <img
-                    src={clickedElements.has(index) ? "src/assets/images/icon/sun.svg" : "src/assets/images/icon/poulpe.svg"}
-                    className="mb-1"
-                    alt="icone de poulpe"
-                />
-                <span>{quality.name}</span>
-                <p className={clickedElements.has(index) ? 'd-flex movingElementText' : 'd-none '}>{quality.description}</p>
-            </div>
+        <div className="flexRowCenter my-5">
+            <h1>Mes qualitées</h1>
+        </div>
+        <div className="flexRow flexRowWrap poulpeContainer">
+            {data.map((quality,index)=>(
+                <div
+                    key={quality.id}
+                    ref={el => (elementsRef.current[index] = el)}
+                    className={`moving-element ${clickedElements.has(index) ? 'clicked' : ''} my-3 w25p` }
+                    onClick={() => {
+                        handleClick(index);
+                    }}
+                >
+                    <img
+                        src={clickedElements.has(index) ? "src/assets/images/icon/sun.svg" : "src/assets/images/icon/poulpe.svg"}
+                        className="mb-1"
+                        alt="icone de poulpe"
+                    />
+                    <span className={clickedElements.has(index) ? 'color-white ' : ' '}>{quality.name}</span>
+                    <p className={clickedElements.has(index) ? 'd-flex movingElementText' : 'd-none '}>{quality.description}</p>
+                </div>
 
-        ))}
+            ))}
+        </div>
+
     </>
 
 }

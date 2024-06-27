@@ -1,11 +1,13 @@
+
+
+
 .moving-element{
     transition: transform 0.5s ease;
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: absolute;
     cursor: pointer;
-}
+;}
 
 .moving-element.clicked {
     background: var(--simplet);
@@ -29,4 +31,7 @@
     height: 13px;
     background: white;
     clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+}
+.color-white{
+    color: white !important;
 }
