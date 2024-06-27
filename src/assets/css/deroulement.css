@@ -1,0 +1,39 @@
+.deroulementContainer{
+    margin-top: 5vh;
+    animation: sliceLeft 1s;
+}
+.deroulementContainer h1{
+    position: relative;
+}
+.deroulementContainer h1:after{
+    content: "";
+    position: absolute;
+    bottom: -42%;
+    left: 3%;
+    width: 35%;
+    height: 10px;
+    background: var(--simplet);
+}
+.projectStepContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.projectStep{
+width: 35%;
+    margin-top: 3%;
+}
+
+@keyframes sliceLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

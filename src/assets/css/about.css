@@ -1,0 +1,41 @@
+
+/* ============= Page ================ */
+.aboutContainer .firstDescription{
+    margin-top: 13vh;
+    align-self: end;margin-bottom: 5vh;
+
+    animation:  comeRight 0.5s linear ;
+}.aboutContainer .secondDescription{
+
+     align-self: start;
+    animation:  comeLeft 0.5s linear ;
+}
+.aboutContainer .firstDescription p{
+    margin-block: 5vh;
+}
+.aboutContainer .button{
+    margin-inline: 10px;
+}
+
+@keyframes comeRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes comeLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

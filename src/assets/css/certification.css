@@ -1,0 +1,36 @@
+
+.certificationContainer h1{
+    color: var(--simplet);
+}
+
+.certificationScrollable {
+    height: 100%;
+
+}
+
+
+
+.certification {
+    width: 50%;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.5fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+    "title"
+    "description"
+    "points";
+
+    box-sizing: border-box;
+    padding-inline: 35px;
+}
+
+.title { grid-area: title; }
+.description { grid-area: description; }
+.points { grid-area: points; }
+
+.certification p{
+    list-style: inside;
+}

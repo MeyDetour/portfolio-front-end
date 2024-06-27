@@ -1,0 +1,83 @@
+.projectsContainer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    animation : slice 1s ;
+}
+.projectsContainer a {
+width: 32%;
+}
+.projectsContainer a img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    object-position: center;
+}
+.projectsContainer a:hover{
+    scale: 1.005;
+    box-shadow: #0000001c 0px 0px 20px 5px;
+}
+.projectsTexts{
+    animation: opacity 1s;
+}
+@keyframes slice {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/*===============PROJECT============*/
+.stepContainer h2 {
+    font-weight: 800;
+    font-size: 37px;
+    margin-block: 10px;
+}
+.linkProject{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: black 2px solid;
+    width: fit-content;
+position: relative;
+    padding:  20px;
+
+}
+.linkProject:after{
+    content: "";
+    height: 100%;
+    width: 0%;
+    background: black;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    z-index: -1;
+    transition: all .5s;
+}
+.linkProject img{
+    margin-left: 10px;
+}
+.linkProjectcontainer{
+    width: fit-content;
+}
+.linkProjectcontainer:hover .linkProject:after{
+
+    width: 100%;
+}
+.linkProjectcontainer:hover .linkProject{
+color: white;
+}

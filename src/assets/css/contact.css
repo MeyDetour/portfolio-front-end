@@ -1,0 +1,144 @@
+.contactcontainer {
+    padding-left: 25%;
+}
+
+.contactTexts p{
+    text-align: center;
+}
+.bandeau {
+    background: var(--simplet);
+    height: 100%;
+    width: 20vw;
+    position: absolute;
+    top: 0%;
+    left: 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.backButton {
+    color: black;
+}
+.backButton:hover{
+    color: #4b4b4b;
+}
+.socialMedia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: socialMedia 1s ease 0s 1 normal forwards;
+}
+
+.logoContainer {
+    height: 167px;
+}
+
+.logoContainer > div {
+    width: 30%;
+    height: 100%;
+    position: relative;
+}
+
+.logoContainer img {
+    height: 20vh;
+    position: absolute;
+}
+
+.logoContainer .img1 {
+    height: 20vh;
+    animation: img1 1s linear;
+    left: 16%;
+    top: 30%;
+    transform: rotate(0deg);
+}
+
+.logoContainer .img2 {
+    height: 20vh;
+    transform: rotate(0deg);
+    left: 42%;
+    top: -9%;
+    animation: img2 1s linear;
+}
+
+.logoContainer .rond {
+    background: #DFA4AE;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.logoContainer .rond1 {
+    left: 16%;
+    top: -10%;
+
+    animation: appear 2s ease-in-out;
+
+}
+
+.logoContainer .rond2 {
+    left: 81%;
+    top: 124%;
+
+    animation: appear 2s  ease-in-out;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes img1 {
+    0% {
+        left: -42%;
+        top: 53%;
+        transform: rotate(90deg);
+    }
+    50% {
+
+        left: 16%;
+        top: 30%;
+        transform: rotate(0deg);
+    }
+    100% {
+        left: 16%;
+        top: 30%;
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes img2 {
+    0% {
+        transform: rotate(90deg);
+        left: 100%;
+        top: 24%;
+    }
+    50% {
+        transform: rotate(0deg);
+        left: 42%;
+        top: -9%;
+    }
+
+    100% {
+        transform: rotate(0deg);
+        left: 42%;
+        top: -9%;
+    }
+}
+
+@keyframes socialMedia {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
