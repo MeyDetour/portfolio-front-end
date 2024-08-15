@@ -2,9 +2,9 @@ import React, {useEffect, useState} from 'react';
 import {useFetch} from "../../hooks/useApi.jsx";
 import {ButtonBack} from "../common/buttonBack.jsx";
 import '../../assets/css/about.css'
-import {Link} from "react-router-dom";
-import Loader from "../common/loader.jsx";
 import {getLastProject, getTexts} from "../../api/api.js";
+import Loader from "../common/loader.jsx";
+import {Link} from "react-router-dom";
 
 export default function About() {
     const { data: lastProjectData, loading: lastProjectLoading, error: lastProjectError } = useFetch(getLastProject);

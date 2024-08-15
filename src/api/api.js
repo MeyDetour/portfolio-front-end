@@ -1,6 +1,8 @@
 
 
-const API_URL = 'https://localhost:8000/';export const fetchData = async (endpoint) => {
+const API_URL = 'https://localhost:8000/';
+
+export const fetchData = async (endpoint) => {
     try {
         const response = await fetch(`${API_URL}${endpoint}`, {
             headers: { 'Content-Type': 'application/json' },
