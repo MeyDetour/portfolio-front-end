@@ -1,6 +1,6 @@
 
 
-const API_URL = 'https://localhost:8000/';
+const API_URL = 'https://backend.meydetour.com/';
 
 export const fetchData = async (endpoint) => {
     try {
