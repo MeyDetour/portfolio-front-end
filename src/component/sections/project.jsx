@@ -18,10 +18,17 @@ export default function Project() {
         </Link>
         <div className="flexColAround h100p">
             <div className="h50p flexRowBetween">
-                <div className="flexCol">
+                <div className="flexCol projectPresentation">
 
                     <h1 className="red">{project.name}</h1>
-                    <p>{project.description}</p>
+                    <p>{project.description}  {project.githubLink ?
+                        <>  Vous pouvez explorer le projet sur le dépôt <a style={{textDecoration:"underline"}}
+                                                                           href={project.githubLink}> GitHub</a>
+                        </>
+
+                        : null}
+                     </p>
+
                     <div className="linkProjectcontainer">
                         <a href={project.link} className="linkProject mt-2" target="_blank">
                             Voir le projet

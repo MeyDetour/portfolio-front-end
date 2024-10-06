@@ -7,6 +7,8 @@
 }
 .projectsContainer a {
 width: 32%;
+
+    box-shadow: #cb9f9f61 0px 0px 31px 0px;
 }
 .projectsContainer a img{
     width: 100%;
@@ -42,6 +44,10 @@ width: 32%;
     }
 }
 /*===============PROJECT============*/
+.projectPresentation{
+    padding-right: 25px;
+    box-sizing: border-box;
+}
 .stepContainer h2 {
     font-weight: 800;
     font-size: 37px;
@@ -54,7 +60,8 @@ width: 32%;
     border: black 2px solid;
     width: fit-content;
 position: relative;
-    padding:  20px;
+    padding: 10px 20px;
+    box-sizing: border-box;
 
 }
 .linkProject:after{
@@ -73,6 +80,7 @@ position: relative;
 }
 .linkProjectcontainer{
     width: fit-content;
+
 }
 .linkProjectcontainer:hover .linkProject:after{
 

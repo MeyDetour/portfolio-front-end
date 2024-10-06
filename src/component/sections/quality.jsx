@@ -8,7 +8,6 @@ import Loader from "../common/loader.jsx";
 export default function Quality() {
     const {data,loading,error} = useFetch(getQualities)
     const elementsRef = useRef([]);
-    const initialPositions = useRef([]);
     const [clickedElements, setClickedElements] = useState(new Set());
 
 
@@ -41,7 +40,7 @@ export default function Quality() {
                 <div
                     key={quality.id}
                     ref={el => (elementsRef.current[index] = el)}
-                    className={`moving-element ${clickedElements.has(index) ? 'clicked' : ''} my-3 w25p` }
+                    className={`moving-element ${clickedElements.has(index) ? 'clicked' : ''} my-3 ` }
                     onClick={() => {
                         handleClick(index);
                     }}

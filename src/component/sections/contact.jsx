@@ -40,7 +40,7 @@ export default function Contact() {
 
                 </div>
                 <div className="flexColAround alignCenter h100p ">
-                    <div className="w100p logoContainer alignCenter flexRowCenter  ">
+                   {/* <div className="w100p logoContainer alignCenter flexRowCenter  ">
                         <div>
                             <div className="rond rond1"></div>
                             <div className="rond rond2"></div>
@@ -48,12 +48,16 @@ export default function Contact() {
                             <img className="img2" src="src/assets/images/logo/logo-part-2.svg" alt="logo partie 2"/>
 
                         </div>
-    </div>
+                    </div>*/}
                     <div className="contactTexts flexCol alignCenter">
                         <h1 className="red">Me contacter</h1>
                         <p>
-                            Je suis toujours ravi de rencontrer de nouvelles personnes et d'explorer de potentielles opportunités. Que vous ayez des questions sur mes projets, que vous souhaitiez discuter d'idées de collaboration ou simplement entrer en contact, je serais heureux de vous entendre.   </p>
-                        <p>N'hésitez pas à me contacter via le formulaire ci-dessous ou par mes coordonnées fournies. Je m'efforcerai de répondre à votre message dans les plus brefs délais.</p>
+                            Je suis toujours ravi de rencontrer de nouvelles personnes et d'explorer de potentielles
+                            opportunités. Que vous ayez des questions sur mes projets, que vous souhaitiez discuter
+                            d'idées de collaboration ou simplement entrer en contact, je serais heureux de vous
+                            entendre. </p>
+                        <p>N'hésitez pas à me contacter via le formulaire ci-dessous ou par mes coordonnées fournies. Je
+                            m'efforcerai de répondre à votre message dans les plus brefs délais.</p>
                         <Link className="button mt-3" to="/deroulement">Me contacter pour un projet</Link>
                     </div>
                 </div>

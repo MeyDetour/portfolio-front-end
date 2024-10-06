@@ -1,5 +1,7 @@
 
-
+.poulpeContainer{
+    gap :20px
+}
 
 .moving-element{
     transition: transform 0.5s ease;
