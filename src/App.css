@@ -1,67 +1,101 @@
 @media only screen and (min-width: 200px) {
-    background: black;
+    .root {
+        background: black;
+    }
 }
 
 @media only screen and (min-width: 300px) {
-    background: darkred;
+    .root {
+        background: darkred;
+    }
 }
 
 @media only screen and (min-width: 400px) {
-    background: gold;
+    .root {
+        background: gold;
+    }
 }
 
 @media only screen and (min-width: 500px) {
-    background: coral;
+    .root {
+        background: coral;
+    }
 }
 
 @media only screen and (min-width: 600px) {
-    background: navy;
+    .root {
+        background: navy;
+    }
 }
 
 @media only screen and (min-width: 700px) {
-    background: darkgreen;
+    .root {
+        background: darkgreen;
+    }
 }
 
 @media only screen and (min-width: 800px) {
-    background: brown;
+    .root {
+        background: brown;
+    }
 }
 
 @media only screen and (min-width: 900px) {
-    background: lime;
+    .root {
+        background: lime;
+    }
 }
 
 @media only screen and (min-width: 1000px) {
-    background: lightblue;
+    .root {
+        background: lightblue;
+    }
 }
 
 @media only screen and (min-width: 1100px) {
-    background: teal;
+    .root {
+        background: teal;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
-    background: pink;
+    .root {
+        background: pink;
+    }
 }
 
 @media only screen and (min-width: 1300px) {
-    background: purple;
+    .root {
+        background: purple;
+    }
 }
 
 @media only screen and (min-width: 1400px) {
-    background: red;
+    .root {
+        background: red;
+    }
 }
 
 @media only screen and (min-width: 1500px) {
-    background: orange;
+    .root {
+        background: orange;
+    }
 }
 
 @media only screen and (min-width: 1600px) {
-    background: yellow;
+    .root {
+        background: yellow;
+    }
 }
 
 @media only screen and (min-width: 1700px) {
-    background: green;
+    .root {
+        background: green;
+    }
 }
 
 @media only screen and (min-width: 1800px) {
-    background: blue;
+    .root {
+        background: blue;
+    }
 }
