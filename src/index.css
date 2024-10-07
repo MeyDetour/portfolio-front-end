@@ -88,11 +88,17 @@ button {
     display: flex !important;
 }
 .flexRow {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     flex-direction: row;
 }
 
 .flexRowEnd {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     flex-direction: row;
     justify-content: end;
@@ -105,48 +111,66 @@ button {
 }
 
 .flexRowAround {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
 .flexRowBetween {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
 .flexRowWrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
 .flexCol {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     flex-direction: column;
 }
 
 .flexColAround {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
 .flexColBetween {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .flexColEvenly {
-    display: flex;
+     display: -webkit-box;
     flex-direction: column;
     justify-content: space-evenly;
 }
 
 .flexColWrap {
-    display: flex;
+       display: -webkit-flex;
     flex-direction: column;
     flex-wrap: wrap;
 }
@@ -249,7 +273,7 @@ button {
 
 /* --- Bouttons --- */
 .backButton {
-    display: flex;
+       display: -ms-flexbox;
     flex-direction: row;
     align-items: center;
     position: absolute;
@@ -257,7 +281,7 @@ button {
     left: calc(3vw + 20px);
 }
 .nextButton{
-    display: flex;
+       display: flex;
     flex-direction: row;
     align-items: center;
     position: absolute;

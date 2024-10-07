@@ -1,4 +1,7 @@
 .projectsContainer{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -17,11 +20,24 @@ width: 32%;
     object-position: center;
 }
 .projectsContainer a:hover{
-    scale: 1.005;
+    -webkit-transform: scale(1.005);
+    transform: scale(1.005);
     box-shadow: #0000001c 0px 0px 20px 5px;
 }
 .projectsTexts{
     animation: opacity 1s;
+}
+@-webkit-keyframes slice {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-50px);
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
 }
 @keyframes slice {
     0% {
@@ -35,6 +51,14 @@ width: 32%;
     }
 }
 
+@-webkit-keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 @keyframes opacity {
     0% {
         opacity: 0;
@@ -54,6 +78,9 @@ width: 32%;
     margin-block: 10px;
 }
 .linkProject{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -87,5 +114,7 @@ position: relative;
     width: 100%;
 }
 .linkProjectcontainer:hover .linkProject{
-color: white;
+    color: white;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
 }

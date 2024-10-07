@@ -15,6 +15,9 @@
     background: var(--simplet);
 }
 .projectStepContainer {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
