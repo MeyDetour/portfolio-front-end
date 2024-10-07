@@ -1,3 +1,12 @@
+
+.homePage{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+}
+
 /* ============ Mey's image =========== */
 .imageMeyDetour {
     height: 100%;
@@ -68,6 +77,21 @@
 
     .intro h1 {
         font-size: 54px;
+    }
+}
+@media only screen and (min-height: 1100px) and (max-width: 930px){
+.homePage{
+    flex-direction: column;
+
+}
+    .intro h1{
+        text-align: center;
+    }
+    .intro p{
+        text-align: center;
+    }
+    .navigation ul{
+        justify-content: center;
     }
 }
 /* ============= Icons ================ */

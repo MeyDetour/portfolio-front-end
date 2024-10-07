@@ -15,7 +15,7 @@ export default function Root() {
 
     return (
         <>
-            <div className={"flexRow alignCenter h100p"}>
+            <div className={"homePage alignCenter h100p"}>
                 <img className={'imageMeyDetour'} src="src/assets/images/MeyDetour.png"
                      alt="Portrait stylisé de la développeuse Mey Detour"></img>
                 <div className={"intro  alignEnd"}>
