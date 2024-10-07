@@ -1,24 +1,67 @@
-/* Écran entre 1800px et 1500px */
-@media only screen and (max-device-width: 1800px) and (min-device-width: 1501px) {
-    background: blue;
+@media only screen and (min-width: 200px) {
+    background: black;
 }
 
-/* Écran entre 1500px et 1200px */
-@media only screen and (max-device-width: 1500px) and (min-device-width: 1201px) {
-    background: green;
+@media only screen and (min-width: 300px) {
+    background: darkred;
 }
 
-/* Écran entre 1200px et 800px */
-@media only screen and (max-device-width: 1200px) and (min-device-width: 801px) {
-    background: yellow;
+@media only screen and (min-width: 400px) {
+    background: gold;
 }
 
-/* Écran entre 800px et 480px */
-@media only screen and (max-device-width: 800px) and (min-device-width: 481px) {
+@media only screen and (min-width: 500px) {
+    background: coral;
+}
+
+@media only screen and (min-width: 600px) {
+    background: navy;
+}
+
+@media only screen and (min-width: 700px) {
+    background: darkgreen;
+}
+
+@media only screen and (min-width: 800px) {
+    background: brown;
+}
+
+@media only screen and (min-width: 900px) {
+    background: lime;
+}
+
+@media only screen and (min-width: 1000px) {
+    background: lightblue;
+}
+
+@media only screen and (min-width: 1100px) {
+    background: teal;
+}
+
+@media only screen and (min-width: 1200px) {
+    background: pink;
+}
+
+@media only screen and (min-width: 1300px) {
+    background: purple;
+}
+
+@media only screen and (min-width: 1400px) {
+    background: red;
+}
+
+@media only screen and (min-width: 1500px) {
     background: orange;
 }
 
-/* Écran entre 480px et 200px */
-@media only screen and (max-device-width: 480px) and (min-device-width: 200px) {
-    background: red;
+@media only screen and (min-width: 1600px) {
+    background: yellow;
+}
+
+@media only screen and (min-width: 1700px) {
+    background: green;
+}
+
+@media only screen and (min-width: 1800px) {
+    background: blue;
 }
