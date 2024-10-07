@@ -1,7 +1,7 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import '../../assets/css/home.css'
-import '../../app.css'
+import '../../../app.css'
 import {useFetch} from "../../hooks/useApi.jsx";
 import Loader from "../common/loader.jsx";
 import {getTexts} from "../../api/api.js";
