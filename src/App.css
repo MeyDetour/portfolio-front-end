@@ -1,0 +1,24 @@
+/* Écran entre 1800px et 1500px */
+@media only screen and (max-device-width: 1800px) and (min-device-width: 1501px) {
+    background: blue;
+}
+
+/* Écran entre 1500px et 1200px */
+@media only screen and (max-device-width: 1500px) and (min-device-width: 1201px) {
+    background: green;
+}
+
+/* Écran entre 1200px et 800px */
+@media only screen and (max-device-width: 1200px) and (min-device-width: 801px) {
+    background: yellow;
+}
+
+/* Écran entre 800px et 480px */
+@media only screen and (max-device-width: 800px) and (min-device-width: 481px) {
+    background: orange;
+}
+
+/* Écran entre 480px et 200px */
+@media only screen and (max-device-width: 480px) and (min-device-width: 200px) {
+    background: red;
+}
