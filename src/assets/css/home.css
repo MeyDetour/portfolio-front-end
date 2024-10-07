@@ -22,6 +22,7 @@
 .intro {
     padding-inline: 5%;
     animation: introAnim 1s ease 0s 1 normal forwards;
+    width: 100%;
 }
 
 .intro h1 {
@@ -102,6 +103,63 @@
 
     .navigation ul {
         justify-content: center;
+    }
+    .navigation ul li{
+        margin-right: 0;
+
+        margin-inline: 41px;
+    }
+}
+@media only screen and (max-width: 950px) {
+
+    .intro h1 {
+        font-size: 47px;
+    }
+    .homePage {
+        flex-direction: column;
+
+    }
+    .intro h1 {
+        text-align: center;
+    }
+
+    .intro p {
+        text-align: center;
+
+        margin-block: 3vh 5vh;
+    }
+
+    .navigation ul {
+        justify-content: center;
+    }
+    .navigation ul li{
+        margin-right: 0;
+
+        margin-inline: 41px;
+    }
+}
+@media only screen and (max-width: 600px) {
+.imageMeyDetour{
+
+    width: 50%;
+}
+    .intro h1 {
+        font-size: 37px;
+    }
+
+
+    .navigation ul {
+        justify-content: space-between;
+    }
+    .navigation ul li{
+        margin-right: 0;
+
+        margin-inline: 0;
+    }
+    .navigation img,   .navigation svg{
+
+        width: 82px;
+        height: 82px;
     }
 }
 
