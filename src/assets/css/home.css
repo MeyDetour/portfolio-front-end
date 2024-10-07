@@ -1,5 +1,5 @@
 
-.homePage{
+.homePage {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -50,53 +50,65 @@
 }
 
 .navigation ul li {
-    margin-right:  50px;
+    margin-right: 50px;
     animation: animNav 1s ease 0s 1 normal forwards;
 }
 
-@media only screen and (max-width: 1520px){
+@media only screen and (max-width: 1520px) {
 
     .intro h1 {
         font-size: 88px
     }
 }
-@media only screen and (max-width: 1410px){
+
+@media only screen and (max-width: 1410px) {
 
     .intro h1 {
         font-size: 66px;
     }
-}@media only screen and (max-width: 1240px){
+}
 
-    .imageMeyDetour{
+@media only screen and (max-width: 1240px) {
+
+    .imageMeyDetour {
 
         width: 39%;
         object-fit: contain;
     }
 }
-@media only screen and (max-width: 1130px){
+
+@media only screen and (max-width: 1130px) {
 
     .intro h1 {
         font-size: 54px;
     }
 }
-@media only screen and (min-height: 1260px) and (max-width: 1100px){
-.homePage{
-    flex-direction: column;
 
-}
-    .intro h1{
+@media only screen and (min-height: 1150px) and (max-width: 1100px) {
+    .homePage {
+        flex-direction: column;
+
+    }
+
+    .intro h1 {
         text-align: center;
     }
-    .intro p{
+
+    .intro p {
         text-align: center;
+
+        margin-block: 3vh 5vh;
     }
-    .navigation ul{
+
+    .navigation ul {
         justify-content: center;
     }
 }
+
 /* ============= Icons ================ */
 .socialIcon {
-    position: absolute;top: 50px;
+    position: absolute;
+    top: 50px;
     right: 50px;
     animation: homeTitle 1s ease 0s 1 normal forwards;
 }
@@ -115,6 +127,7 @@
         transform: scale(1);
     }
 }
+
 @keyframes animNav {
     0% {
         transform: scale(0.8);
@@ -133,6 +146,7 @@
         opacity: 1;
     }
 }
+
 @keyframes introAnim {
     0% {
         opacity: 0;
