@@ -46,7 +46,7 @@ export default function About() {
                     <h1>Dernier project :</h1>
                     <h2> {data2.name}</h2>
                     <p>{data2.description}</p>
-                    <span>Objectif(s) : {data2.objectifs} </span>
+                    <p>Objectif(s) : {data2.objectifs} </p>
                     <span>Technologie(s) : {data2.technology} </span>
 
                 </div>

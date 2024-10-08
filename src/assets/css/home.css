@@ -160,6 +160,7 @@
     .homePage {
         flex-direction: column;
 
+        margin-top: -10vh;
     }
 
     .intro h1 {

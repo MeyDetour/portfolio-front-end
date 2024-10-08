@@ -1,19 +1,23 @@
-
 /* ============= Page ================ */
-.aboutContainer .firstDescription{
+.aboutContainer .firstDescription {
     margin-top: 13vh;
-    align-self: end;margin-bottom: 5vh;
+    align-self: end;
+    margin-bottom: 5vh;
 
-    animation:  comeRight 0.5s linear ;
-}.aboutContainer .secondDescription{
-
-     align-self: start;
-    animation:  comeLeft 0.5s linear ;
+    animation: comeRight 0.5s linear;
 }
-.aboutContainer .firstDescription p{
+
+.aboutContainer .secondDescription {
+    text-align: end;
+    align-self: start;
+    animation: comeLeft 0.5s linear;
+}
+
+.aboutContainer .firstDescription p {
     margin-block: 5vh;
 }
-.aboutContainer .button{
+
+.aboutContainer .button {
     margin-inline: 10px;
 }
 
@@ -28,6 +32,7 @@
         transform: translateX(0);
     }
 }
+
 @keyframes comeLeft {
     0% {
         opacity: 0;
@@ -37,5 +42,32 @@
     100% {
         opacity: 1;
         transform: translateX(0);
+    }
+}
+
+@media only screen and (max-width: 1410px) {
+    .aboutContainer {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        flex-direction: column-reverse;
+
+        justify-content: start;
+    }
+
+    .aboutContainer .secondDescription {
+        width: 100%;
+        text-align: start;
+        align-self: start;
+        align-items: start;
+    }
+
+    .aboutContainer .firstDescription {
+        width: 100%;
+        align-self: end;
+        align-items: end;
+
+        margin-top: 64px;
     }
 }
