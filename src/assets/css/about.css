@@ -51,8 +51,7 @@
         display: -webkit-flex;
         display: -ms-flexbox;
         display: flex;
-        flex-direction: column-reverse;
-
+flex-direction: column;
         justify-content: start;
     }
 

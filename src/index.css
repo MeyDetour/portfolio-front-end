@@ -549,3 +549,8 @@ button {
     }
 
 }
+@media only screen and (max-width: 540px) {
+    .button {
+        font-size: 12px;
+    }
+}
