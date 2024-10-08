@@ -118,3 +118,9 @@ position: relative;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
 }
+
+@media only screen and (max-width: 1080px) {
+    .projectsTexts p{
+        width: 100%;
+    }
+}

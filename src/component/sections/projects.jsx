@@ -19,8 +19,7 @@ export default function Projects() {
                <h1 className="mt-5 red ">Projets</h1>
                <p className="w50p">Explorez mes projets pour découvrir les diverses solutions web que j'ai développées. Chaque projet
                    représente une opportunité où j'ai pu appliquer mes compétences, relever des défis techniques et
-                   apprendre de nouvelles technologies. Vous y trouverez des exemples concrets de mon travail et de ma
-                   passion pour le développement web.
+                   apprendre de nouvelles technologies.
 
                </p>
            </div>
