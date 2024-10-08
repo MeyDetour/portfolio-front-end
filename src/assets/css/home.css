@@ -154,7 +154,7 @@
     }
 #root{
 
-    height: 97%;
+    height: fit-content;
 }
     .imageMeyDetour {
         width: 62%;
@@ -200,7 +200,7 @@
 
     body {
 
-        font-size: 25px;
+        font-size: 29px;
     }
     .navigation img{
 
