@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import {Link} from "react-router-dom";
 import '../../assets/css/home.css'
 import '../../App.css'
@@ -9,19 +9,19 @@ import {getTexts} from "../../api/api.js";
 export default function Root() {
 
     const {data, loading, error} = useFetch(getTexts);
-
     if (loading) return <><Loader></Loader></>;
     if (error) return <p>Error: {error.message}</p>;
 
+
     return (
         <>
-            <div className={"homePage alignCenter h100p"}>
+            <div className={`homePage alignCenter h100p " : ""}`}>
                 <img className={'imageMeyDetour'} src="src/assets/images/MeyDetour.png"
                      alt="Portrait stylisé de la développeuse Mey Detour"></img>
                 <div className={"intro  alignEnd"}>
 
-                        <h1>Développeuse <br/> Web <span className="creative">Créative</span></h1>
-                        <p>{data.homePage}</p>
+                    <h1>Développeuse <br/> Web <span className="creative">Créative</span></h1>
+                    <p>{data.homePage}</p>
 
                     <nav className="navigation">
                         <ul>
