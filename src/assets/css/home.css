@@ -152,7 +152,10 @@
         justify-content: space-around;
 
     }
+#root{
 
+    height: 97%;
+}
     .imageMeyDetour {
         width: 62%;
         height: fit-content;
