@@ -120,7 +120,19 @@ position: relative;
 }
 
 @media only screen and (max-width: 1080px) {
+   .projectsTexts{
+       margin-bottom: 50px;
+   }
     .projectsTexts p{
         width: 100%;
+    }
+    .projectsContainer{
+        flex-direction: column;
+        width: 100%;
+    }
+    .projectsContainer a{
+        width: 100%;
+        gap: 47px;
+
     }
 }

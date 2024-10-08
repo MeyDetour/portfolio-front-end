@@ -36,8 +36,8 @@ export default function About() {
                     <h1>A propos</h1>
                     <p>{data.about}</p>
                     <div className="flexRow">
-                        <Link to={'/certifications'} className="button">Mes certifications</Link>
-                        <Link to={'/compétences'} className="button">Mes Compétences</Link>
+                     {/*   <Link to={'/certifications'} className="button">Mes certifications</Link>
+                      */}  <Link to={'/compétences'} className="button">Mes Compétences</Link>
                         <Link to={'/qualites'} className="button">Mes qualités</Link>
 
                     </div>
