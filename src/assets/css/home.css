@@ -223,7 +223,10 @@
 
         padding-inline: 40px;
     }
-
+    .navigation img, .navigation svg {
+        width: 65px;
+        height: 65px;
+    }
     .navigation ul {
         justify-content: space-between;
     }
@@ -234,10 +237,11 @@
         margin-inline: 0;
     }
 
-    .navigation img, .navigation svg {
 
-        width: 82px;
-        height: 82px;
+    .socialIcon img{
+
+        width: 40px;
+
     }
 }
 
