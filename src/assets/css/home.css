@@ -85,40 +85,17 @@
     }
 }
 
-@media only screen and (min-height: 1150px) and (max-width: 1100px) {
-    .homePage {
-        flex-direction: column;
-
-    }
-
-    .intro h1 {
-        text-align: center;
-    }
-
-    .intro p {
-        text-align: center;
-
-        margin-block: 3vh 5vh;
-    }
-
-    .navigation ul {
-        justify-content: center;
-    }
-    .navigation ul li{
-        margin-right: 0;
-
-        margin-inline: 41px;
-    }
-}
 @media only screen and (max-width: 950px) {
 
     .intro h1 {
         font-size: 47px;
     }
+
     .homePage {
         flex-direction: column;
 
     }
+
     .intro h1 {
         text-align: center;
     }
@@ -132,17 +109,20 @@
     .navigation ul {
         justify-content: center;
     }
-    .navigation ul li{
+
+    .navigation ul li {
         margin-right: 0;
 
         margin-inline: 41px;
     }
 }
-@media only screen and (max-width: 600px) {
-.imageMeyDetour{
 
-    width: 50%;
-}
+@media only screen and (max-width: 600px) {
+    .imageMeyDetour {
+
+        width: 50%;
+    }
+
     .intro h1 {
         font-size: 37px;
     }
@@ -151,18 +131,111 @@
     .navigation ul {
         justify-content: space-between;
     }
-    .navigation ul li{
+
+    .navigation ul li {
         margin-right: 0;
 
         margin-inline: 0;
     }
-    .navigation img,   .navigation svg{
+
+    .navigation img, .navigation svg {
 
         width: 82px;
         height: 82px;
     }
 }
+/*========================================================================VERTICAL RESPPONSIF==================================================*/
+/* height > 1150 && width < 1100 */
+@media only screen and (min-height: 1150px) and (max-width: 1100px) {
+    .homePage {
+        flex-direction: column;
+        justify-content: space-around;
 
+    }
+
+    .imageMeyDetour {
+        width: 62%;
+        height: fit-content;
+    }
+
+    .intro h1 {
+        text-align: center;
+    }
+
+    .intro p {
+        text-align: center;
+
+        margin-block: 3vh 5vh;
+    }
+
+    .navigation ul {
+        justify-content: center;
+    }
+
+    .navigation ul li {
+        margin-right: 0;
+
+        margin-inline: 41px;
+    }
+    .socialIcon img {
+
+        width: 55px;
+    }
+}
+
+/* height > 1500 && width < 1100 */
+@media only screen and (min-height: 1500px) and (max-width: 1100px) {
+    .homePage {
+        flex-direction: column;
+
+    }
+
+    .intro h1 {
+        text-align: center;
+        font-size: 75px;
+    }
+
+    body {
+
+        font-size: 25px;
+    }
+    .navigation img{
+
+        width: 156px;
+    }
+    .socialIcon img {
+
+        width: 94px;
+    }
+}
+
+/* height > 2000 && width < 1100 */
+@media only screen and (min-height: 2000px) and (max-width: 1100px) {
+    .homePage {
+        flex-direction: column;
+
+    }
+.imageMeyDetour{
+    width: 92%;
+}
+    .intro h1 {
+        text-align: center;
+        font-size: 90px;
+    }
+
+    body {
+
+        font-size: 37px;
+    }
+    .navigation img {
+        width: 177px;
+    }
+    .socialIcon img {
+
+        width: 94px;
+    }
+
+}
 /* ============= Icons ================ */
 .socialIcon {
     position: absolute;
