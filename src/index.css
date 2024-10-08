@@ -18,7 +18,16 @@ body {
     background-repeat: no-repeat;
     background-position: center;
 }
+::-moz-selection { /* Code for Firefox */
 
+    color: #400000;
+    background: #ea4d4d;
+}
+
+::selection {
+    color: #400000;
+    background:#ea4d4d;
+}
 :root {
     --simplet: #FF2147
 

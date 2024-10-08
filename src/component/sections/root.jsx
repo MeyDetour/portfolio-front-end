@@ -4,14 +4,18 @@ import '../../assets/css/home.css'
 import '../../App.css'
 import {useFetch} from "../../hooks/useApi.jsx";
 import Loader from "../common/loader.jsx";
-import {getTexts} from "../../api/api.js";
+import {getMedias, getTexts} from "../../api/api.js";
 
 export default function Root() {
 
-    const {data, loading, error} = useFetch(getTexts);
+    const { data: data, loading: loading, error: error } = useFetch(getTexts);
+    const { data: medias, loading: loading2, error: error2 } = useFetch(getMedias);
+
     if (loading) return <><Loader></Loader></>;
     if (error) return <p>Error: {error.message}</p>;
-
+    if (loading2) return <><Loader></Loader></>;
+    if (error2) return <p>Error: {error.message}</p>;
+    console.log(medias)
 
     return (
         <>
@@ -47,8 +51,9 @@ export default function Root() {
                     </nav>
                 </div>
                 <div className={"socialIcon flexCol"}>
-                    <img src="src/assets/images/icon/github.svg" alt="icone GitHub"/>
-                    <img src="src/assets/images/icon/linkedIn.svg" alt="icone linkedIn"/>
+                    {medias.map(media => (
+                        <><a key={media.link} target={"_blank"} href={media.link}><img src={media.image} alt={`icone de ${media.alt}`}/></a></>
+                    ))}
                 </div>
             </div>
 
