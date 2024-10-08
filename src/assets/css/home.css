@@ -153,8 +153,8 @@
 
     }
 #root{
-    min-height: 96%;
-    height: fit-content;
+    height: 96%;
+    min-height: fit-content;
 }
     .imageMeyDetour {
         width: 62%;
