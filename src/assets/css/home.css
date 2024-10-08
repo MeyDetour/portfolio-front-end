@@ -213,9 +213,9 @@
 
 
     body {
-        padding: 50px 8px;
+        padding: 18px 8px 50px 8px;
         width: calc(100vw - 16px);
-        height: calc(100vh - 100px);
+        height: calc(100vh - 60px);
         font-size: 11px;
     }
 
