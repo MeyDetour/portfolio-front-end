@@ -177,7 +177,9 @@
         top: 20px;
         right: 20px;
     }
-
+    .navigation {
+        height: 30vh;
+    }
     .navigation ul li {
         margin-right: 0;
 
@@ -219,16 +221,13 @@
         font-size: 13px;
     }
 
-    #root {
-
-        padding-inline: 40px;
-    }
     .navigation img, .navigation svg {
         width: 65px;
         height: 65px;
     }
     .navigation ul {
         justify-content: space-between;
+
     }
 
     .navigation ul li {
@@ -246,7 +245,7 @@
 }
 
 
-/*========================================================================VERTICAL RESPPONSIF==================================================*/
+/*======================VERTICAL RESPPONSIF=======================================*/
 /* height > 1150 && width < 1100 */
 @media only screen and (min-height: 1150px) and (max-width: 1100px) {
     .homePage {
@@ -345,5 +344,14 @@
 
         width: 94px;
     }
+
+}
+
+
+
+/*======================LARGE SCREEN RESPONSIF=======================================*/
+
+@media only screen and (min-height: 2000px) and (min-height: 2000px) {
+
 
 }
