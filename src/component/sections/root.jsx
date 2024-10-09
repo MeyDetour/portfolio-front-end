@@ -24,7 +24,7 @@ export default function Root() {
                      alt="Portrait stylisé de la développeuse Mey Detour"></img>
                 <div className={"intro  alignEnd"}>
 
-                    <h1>Développeuse <br/> Web <span className="creative">Créative</span></h1>
+                    <h1><span className="creative">Mey</span> Detour Développeuse </h1>
                     <p>{data.homePage}</p>
 
                     <nav className="navigation">

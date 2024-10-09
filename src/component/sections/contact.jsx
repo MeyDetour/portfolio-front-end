@@ -20,7 +20,7 @@ export default function Contact() {
                 </Link>
             </div>
             <div className="flexRow h100p">
-                <div className="flexColAround alignCenter h100p mx-4">
+                <div className="flexCol alignCenter h100p mx-4">
                     {data.map((datum) => (
                         datum.link ? (
                             <a key={datum.id} href={datum.link} className="socialMedia" target="_blank">
