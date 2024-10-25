@@ -2,7 +2,7 @@
 
 ### 🚀 Overview
 
-This is the front end of my portfolio. The backend is built with Symfony and is accessible at [meydetour.com](http://meydetour.com), although it is not yet finished.
+This is the front end of my portfolio. The backend is built with Symfony and is accessible at [meydetour.com](https://www.meydetour.com/), although it is not yet finished.
 
 ### 🔧 Technologies
 - **React**: Used to create dynamic and responsive user interfaces.
