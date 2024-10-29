@@ -454,7 +454,17 @@ button {
     border-radius: 10px;
     width: fit-content;
 }
-
+.backButtonSvgCroix{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    top: calc(0vh + 20px);
+    right: calc(0vw + 20px);
+}
 /*===========LOADER==========*/
 .loader {
     width: 48px;
@@ -552,5 +562,11 @@ button {
 @media only screen and (max-width: 540px) {
     .button {
         font-size: 12px;
+    }
+    .backButton{
+        display: none;
+    }
+    .backButtonSvgCroix{
+        display: flex;
     }
 }

@@ -4,11 +4,14 @@ import {Link} from "react-router-dom";
 export const ButtonBack = ({link}) => {
     return (
 
-            <>
+        <>
 
-                <Link className="backButton" to={link}>
-                    <img src="src/assets/images/icon/arrow.svg" alt="icone de fleche"/> Retour
-                </Link>
-</>
+            <Link className="backButton" to={link}>
+                <img src="src/assets/images/icon/arrow.svg" alt="icone de fleche"/> Retour
+            </Link>
+            <Link className="backButtonSvgCroix" to={link}>
+            <img src="src/assets/images/icon/close.svg" className={"closeIcon"} alt="icone de la croix"/>
+        </Link>
+        </>
     );
 };

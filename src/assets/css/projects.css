@@ -129,10 +129,15 @@ position: relative;
     .projectsContainer{
         flex-direction: column;
         width: 100%;
+        margin-bottom: 55px;
+        gap: 50px;
     }
     .projectsContainer a{
         width: 100%;
         gap: 47px;
 
+    }
+    .projecsPage{
+        height: fit-content;
     }
 }

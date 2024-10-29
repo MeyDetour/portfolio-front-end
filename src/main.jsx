@@ -28,14 +28,15 @@ const router = createBrowserRouter([
         path: "/about",
         element: <About></About>,
     },
-    {
+ /*   {
         path: "/certifications",
         element: <Certifications></Certifications>,
     },
     {
         path: "/compétences",
         element: <Skills></Skills>,
-    },   {
+    },*/
+    {
         path: "/projets",
         element: <Projects></Projects>,
     },
@@ -45,7 +46,7 @@ const router = createBrowserRouter([
     },{
         path: "/contact",
         element: <Contact></Contact>,
-    },{
+    }/*,{
         path: "/deroulement",
         element: <Deroulement></Deroulement>,
     },{
@@ -54,7 +55,7 @@ const router = createBrowserRouter([
     },{
         path: "/qualites",
         element: <Quality></Quality>,
-    },
+    },*/
 ]);
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>

@@ -1,3 +1,7 @@
+.aboutContainer{
+height: fit-content;
+}
+
 /* ============= Page ================ */
 .aboutContainer .firstDescription {
     margin-top: 13vh;
@@ -51,7 +55,7 @@
         display: -webkit-flex;
         display: -ms-flexbox;
         display: flex;
-flex-direction: column;
+        flex-direction: column;
         justify-content: start;
     }
 
@@ -70,3 +74,14 @@ flex-direction: column;
         margin-top: 64px;
     }
 }
+@media only screen and (max-width: 540px) {
+    .aboutContainer .firstDescription {
+    align-items: center;
+    }
+
+    .aboutContainer .secondDescription {
+        align-items: center;
+        text-align: center;
+        margin-bottom: 55px;
+    }
+    }

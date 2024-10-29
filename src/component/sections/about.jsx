@@ -35,12 +35,12 @@ export default function About() {
                 <div className="firstDescription w50p flexCol">
                     <h1>A propos</h1>
                     <p>{data.about}</p>
-                    <div className="flexRow">
-                     {/*   <Link to={'/certifications'} className="button">Mes certifications</Link>
-                      */}  <Link to={'/compétences'} className="button">Mes Compétences</Link>
+                    {/*   <div className="flexRow">
+                       <Link to={'/certifications'} className="button">Mes certifications</Link>
+                       <Link to={'/compétences'} className="button">Mes Compétences</Link>
                         <Link to={'/qualites'} className="button">Mes qualités</Link>
 
-                    </div>
+                    </div>*/}
                    </div>
                 <div className="secondDescription w50p flexCol alignEnd">
                     <h1>Dernier project :</h1>

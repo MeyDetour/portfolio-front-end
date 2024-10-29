@@ -57,8 +57,8 @@ export default function Contact() {
                             d'idées de collaboration ou simplement entrer en contact, je serais heureux de vous
                             entendre. </p>
                         <p>N'hésitez pas à me contacter via le formulaire ci-dessous ou par mes coordonnées fournies. Je
-                            m'efforcerai de répondre à votre message dans les plus brefs délais.</p>
-                        <Link className="button mt-3" to="/deroulement">Me contacter pour un projet</Link>
+                            m'efforcerai de répondre à votre message dans les plus brefs délais.</p>{/*
+                        <Link className="button mt-3" to="/deroulement">Me contacter pour un projet</Link>*/}
                     </div>
                 </div>
             </div>

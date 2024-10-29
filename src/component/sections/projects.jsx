@@ -14,7 +14,7 @@ export default function Projects() {
     return <>
         <ButtonBack link="/"></ButtonBack>
 
-        <div className="flexColAround h100p alignStart">
+        <div className="flexColAround h100p alignStart projecsPage">
            <div className="projectsTexts">
                <h1 className="mt-5 red ">Projets</h1>
                <p className="w50p">Explorez mes projets pour découvrir les diverses solutions web que j'ai développées. Chaque projet

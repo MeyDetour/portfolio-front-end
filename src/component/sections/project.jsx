@@ -2,7 +2,8 @@ import React from 'react';
 import {  useProject} from "../../hooks/useApi.jsx";
 import '../../assets/css/projects.css'
 import Loader from "../common/loader.jsx";
-import {Link, useParams} from 'react-router-dom';
+import {useParams} from 'react-router-dom';
+import {ButtonBack} from "../common/buttonBack.jsx";
 
 export default function Project() {
     const {projId} = useParams();
@@ -13,9 +14,7 @@ export default function Project() {
     if (error) return <p>Error: {error.message}</p>;
 
     return <>
-        <Link className="backButton" to="/projets">
-            <img src="../src/assets/images/icon/arrow.svg" alt="icone de fleche"/> Retour
-        </Link>
+        <ButtonBack></ButtonBack>
         <div className="flexColAround h100p">
             <div className="h50p flexRowBetween">
                 <div className="flexCol projectPresentation">
@@ -41,7 +40,7 @@ export default function Project() {
                     <img src={project.image} alt={project.imageName}/>
                 </div>
             </div>
-            <div className="flexRowBetween  stepContainer">
+          {/*  <div className="flexRowBetween  stepContainer">
                 <div className="flexCol w25p">
                     <h2 className="red">Etape 1</h2>
                     <p>{project.step1}</p>
@@ -54,7 +53,7 @@ export default function Project() {
                     <h2 className="red">Etape 3</h2>
                     <p>{project.step3}</p>
                 </div>
-            </div>
+            </div>*/}
         </div>
 
     </>

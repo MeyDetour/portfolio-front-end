@@ -23,8 +23,7 @@
 .backButton {
     color: black;
 }
-.backButton:hover{
-    color: #4b4b4b;
+.backButton:hover{    color: #2f2f2f;
 }
 .socialMedia {
     display: -webkit-box;
@@ -148,3 +147,4 @@
         transform: translateY(0);
     }
 }
+
