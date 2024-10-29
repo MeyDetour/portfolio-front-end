@@ -41,14 +41,17 @@ export default function Contact() {
                 </div>
                 <div className="contactContentTexts  ">
 
-                        <h1 className="red">Me contacter</h1>
-                        <p>
-                            Je suis toujours ravi de rencontrer de nouvelles personnes et d'explorer de potentielles
-                            opportunités. Que vous ayez des questions sur mes projets, que vous souhaitiez discuter
-                            d'idées de collaboration ou simplement entrer en contact, je serais heureux de vous
-                            entendre. </p>
-                        <p>N'hésitez pas à me contacter via le formulaire ci-dessous ou par mes coordonnées fournies. Je
-                            m'efforcerai de répondre à votre message dans les plus brefs délais.</p>{/*
+                    <h1 className="red">Me contacter</h1>
+                    <p>Mail : meydetour@gmail.com</p>
+                    <p>
+                        Je suis toujours ravi de rencontrer de nouvelles personnes et d'explorer de potentielles
+                        opportunités. Que vous ayez des questions sur mes projets, que vous souhaitiez discuter
+                        d'idées de collaboration ou simplement entrer en contact, je serais heureux de vous
+                        entendre. </p>
+                    <p>N'hésitez pas à me contacter via le formulaire ci-dessous ou par mes coordonnées fournies. Je
+                        m'efforcerai de répondre à votre message dans les plus brefs délais.</p>
+
+                    {/*
                         <Link className="button mt-3" to="/deroulement">Me contacter pour un projet</Link>*/}
 
                 </div>
