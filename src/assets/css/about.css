@@ -1,5 +1,10 @@
 .aboutContainer {
-    height: fit-content;
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
 }
 
 /* ============= Page ================ */
@@ -51,10 +56,7 @@
 
 @media only screen and (max-width: 1410px) {
     .aboutContainer {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
+
         flex-direction: column;
         justify-content: start;
     }

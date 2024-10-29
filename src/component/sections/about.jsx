@@ -31,7 +31,7 @@ export default function About() {
         <>
             <ButtonBack link="/"></ButtonBack>
 
-            <div className="aboutContainer flexRow h100p  ">
+            <div className="aboutContainer    ">
                 <div className="firstDescription w50p flexCol">
                     <h1>A propos</h1>
                     <p>{data.about}</p>
