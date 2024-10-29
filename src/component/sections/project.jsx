@@ -14,9 +14,8 @@ export default function Project() {
     if (error) return <p>Error: {error.message}</p>;
 
     return <>
-        <ButtonBack></ButtonBack>
-        <div className="flexColAround h100p">
-            <div className="h50p flexRowBetween">
+        <ButtonBack link={"/projets"}></ButtonBack>
+            <div className=" h100p projectContainer">
                 <div className="flexCol projectPresentation">
 
                     <h1 className="red">{project.name}</h1>
@@ -36,9 +35,8 @@ export default function Project() {
                     </div>
 
                 </div>
-                <div className="flexCol">
                     <img src={project.image} alt={project.imageName}/>
-                </div>
+
             </div>
           {/*  <div className="flexRowBetween  stepContainer">
                 <div className="flexCol w25p">
@@ -54,7 +52,7 @@ export default function Project() {
                     <p>{project.step3}</p>
                 </div>
             </div>*/}
-        </div>
+
 
     </>
 

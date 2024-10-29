@@ -1,8 +1,33 @@
 .contactcontainer {
     padding-left: 25%;
 }
+.contactContent{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+}
+.contactContentScocialIcon{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    margin-inline: 50px;
+    height: 100%;
+    align-items: center;
+    flex-direction:column ;
+}
+.contactContentTexts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
 
-.contactTexts p{
+}
+.contactContentTexts p{
     text-align: center;
 }
 .bandeau {
@@ -11,13 +36,15 @@
     width: 20vw;
     position: absolute;
     top: 0%;
-    left: 7%;
+    left: 3%;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     flex-direction: column;
     align-items: start;
+    z-index: -1;
+
 }
 
 .backButton {
@@ -95,6 +122,30 @@
     }
     100% {
         opacity: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 540px) {
+    .bandeau{
+        display: none;
+    }
+    .contactcontainer{
+
+        padding: 0;
+    }
+    .contactContent{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .contactContentScocialIcon{
+        flex-direction: row;
+        gap: 20px;
+        justify-content: center;
+        height: fit-content;
+    }
+    .contactContentTexts{
+        height: fit-content;
     }
 }
 

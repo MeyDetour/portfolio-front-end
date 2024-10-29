@@ -569,4 +569,9 @@ button {
     .backButtonSvgCroix{
         display: flex;
     }
+}@media only screen and (max-width: 470px) {
+h1{
+
+    font-size: 28px;
+}
 }
