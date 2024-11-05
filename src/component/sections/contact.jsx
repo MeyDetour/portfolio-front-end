@@ -2,7 +2,7 @@ import React from 'react';
 import {useFetch} from "../../hooks/useApi.jsx";
 import '../../assets/css/contact.css'
 import Loader from "../common/loader.jsx";
-import {Link} from 'react-router-dom';
+import { Navigate} from 'react-router-dom';
 import {getMedias} from "../../api/api.js";
 import {ButtonBack} from "../common/buttonBack.jsx";
 
@@ -11,8 +11,7 @@ export default function Contact() {
     const {data, loading, error} = useFetch(getMedias)
     if (loading) return <><Loader></Loader></>;
 
-    if (error) return <p>Error: {error.message}</p>;
-
+    if (error) return  <Navigate to="*" />;
     return <>
         <div className="contactcontainer h100p">
             <ButtonBack link={"/"} ></ButtonBack>

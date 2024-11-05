@@ -4,7 +4,7 @@ import {ButtonBack} from "../common/buttonBack.jsx";
 import '../../assets/css/about.css'
 import {getLastProject, getTexts} from "../../api/api.js";
 import Loader from "../common/loader.jsx";
-import {Link} from "react-router-dom";
+import {Navigate} from "react-router-dom";
 
 export default function About() {
     const { data: lastProjectData, loading: lastProjectLoading, error: lastProjectError } = useFetch(getLastProject);
@@ -22,10 +22,10 @@ export default function About() {
 
     if (loading) return <><Loader></Loader></>;
 
-    if (error) return <p>Error: {error.message}</p>;
+    if (error) return  <Navigate to="*" />;
     if (loading2) return <><Loader></Loader></>
 
-    if (error2) return <p>Error: {error.message}</p>;
+    if (error2) return  <Navigate to="*" />;
 
     return (
         <>

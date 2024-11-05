@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
 import './index.css'
 import Root from "./component/sections/root.jsx";
 import About from "./component/sections/about.jsx";
@@ -10,13 +9,10 @@ import {
     RouterProvider,
 } from "react-router-dom";
 import Certifications from "./component/sections/certifications.jsx";
-import Skills from "./component/sections/skills.jsx";
 import Projects from "./component/sections/projects";
 import Project from "./component/sections/project";
 import Contact from "./component/sections/contact";
-import Deroulement from "./component/sections/deroulement";
-import Tarifs from "./component/sections/Tarifs";
-import Quality from "./component/sections/quality";
+import NotFound from "./component/sections/notFound.jsx";
 
 
 const router = createBrowserRouter([
@@ -46,6 +42,9 @@ const router = createBrowserRouter([
     },{
         path: "/contact",
         element: <Contact></Contact>,
+    },{
+        path: "*",
+        element: <NotFound></NotFound>,
     }/*,{
         path: "/deroulement",
         element: <Deroulement></Deroulement>,

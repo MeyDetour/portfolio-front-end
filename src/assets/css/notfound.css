@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+.notFoundContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.notFoundContainer > a {
+    text-decoration: underline;
+}
+.notFoundContainer > p {text-align: center;
+}
+
+.notFoundContainer h1 {
+    color: var(--simplet);
+}
+
+.cssError404 {
+    display: flex;
+    flex-direction: row;
+    margin-block: 50px;
+}
+
+.cssError404 > span {
+    font-family: "Playfair Display", serif;
+    font-style: normal;
+    font-size: 178px;
+    font-weight: 900;
+    color: var(--simplet);
+}
+
+.cssError404 .zero {
+
+    width: 281px;
+    height: 281px;
+    background: var(--simplet);
+    margin-inline: -17px;
+    z-index: 12;
+    border-radius: 50%;
+    position: relative;
+}
+
+.cssError404 .zero .crete {
+    clip-path: polygon(56% 0%, 79% 34%, 55% 51%, 73% 75%, 56% 101%, 42% 79%, 17% 41%);
+    background: black;
+    width: 20%;
+    height: 35%;
+    position: absolute;
+    top: -13%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.cssError404 .zero .head {
+    width: 75%;
+    height: 70%;
+    position: absolute;
+    left: 50%;
+    top: 57%;
+    background: white;
+    border-radius: 20% 20% 50% 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cssError404 .zero .head [class^="ear"] {
+    background: black;
+    width: 20%;
+    height: 20%;
+    position: absolute;
+}
+
+.cssError404 .zero .head .ear1 {
+
+    border-radius: 19% 20% 88% 20%;
+}
+
+.cssError404 .zero .head .ear2 {
+
+    right: 0%;
+    top: 0%;
+    border-radius: 20% 19% 20% 88%;
+}
+
+
+.cssError404 .zero .head [class^="eye"] {
+    width: 29%;
+    height: 24%;
+    background: #333333;
+    position: absolute;
+    border-radius: 47%;
+}
+
+.cssError404 .zero .head .pupill {
+    width: 22%;
+    height: 17%;
+    background: white;
+    position: absolute;
+    top: 57%;
+    border-radius: 40%;
+    right: 32%;
+}
+
+.cssError404 .zero .head .eye1 {
+
+    top: 33%;
+    left: 12%;
+
+    transform: rotate(338deg);
+}
+
+.cssError404 .zero .head .eye2 {
+
+    transform: rotate(22deg);
+    top: 33%;
+    right: 12%;
+}
+
+.cssError404 .zero .head .mouth {
+    background: #5b5b5b;
+    width: 27%;
+    height: 20%;
+    position: absolute;
+    bottom: 14%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 56%;
+    clip-path: border-box;
+}
+
+.cssError404 .zero .head .mouth .tong {
+    background: #EB7575;
+    width: 82%;
+    height: 65%;
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%) rotate(14deg);
+    border-radius: 56%;
+}
+
+
+@media only screen and (max-width: 540px) {
+
+    .cssError404 .zero {
+        width: 236px;
+        height: 236px;
+    }
+
+    .cssError404 > span {
+
+        font-size: 144px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    .cssError404 .zero {
+        width: 171px;
+        height: 171px;
+        margin-inline: -4px;
+    }
+
+    .cssError404 > span {
+
+        font-size: 97px;
+    }
+}
+@media only screen and (max-width: 300px) {
+
+    .cssError404 .zero {
+        width: 141px;
+        height: 141px;
+    }
+
+    .cssError404 > span {
+
+        font-size: 69px;
+    }
+}

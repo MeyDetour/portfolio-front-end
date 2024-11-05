@@ -4,6 +4,7 @@ import {ButtonBack} from "../common/buttonBack.jsx";
 import {useFetch} from "../../hooks/useApi.jsx";
 import {getQualities} from "../../api/api.js";
 import Loader from "../common/loader.jsx";
+import {Navigate} from "react-router-dom";
 
 export default function Quality() {
     const {data,loading,error} = useFetch(getQualities)
@@ -13,7 +14,7 @@ export default function Quality() {
 
     // LOAD ERROR AND LOADING FOR THE FETCH
     if (loading) return <><Loader></Loader></>;
-    if (error) return <p>Error: {error.message}</p>;
+    if (error) return  <Navigate to="*" />;
 
     // WHEN A QUALITY ELEMENT IS CLICKED
     const handleClick = (index) => {

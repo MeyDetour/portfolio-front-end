@@ -1,9 +1,5 @@
 import React from 'react';
-import {useFetch} from "../../hooks/useApi.jsx";
-import {ButtonBack} from "../common/buttonBack.jsx";
 import '../../assets/css/certification.css'
-import Loader from "../common/loader.jsx";
-import {getAllCertifs} from "../../api/api.js";
 
 export default function Certifications() {
     return <>

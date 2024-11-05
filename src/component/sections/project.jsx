@@ -2,7 +2,7 @@ import React from 'react';
 import {  useProject} from "../../hooks/useApi.jsx";
 import '../../assets/css/projects.css'
 import Loader from "../common/loader.jsx";
-import {useParams} from 'react-router-dom';
+import {Navigate, useParams} from 'react-router-dom';
 import {ButtonBack} from "../common/buttonBack.jsx";
 
 export default function Project() {
@@ -11,7 +11,7 @@ export default function Project() {
     const {project, loading, error} = useProject(projId)
     if (loading) return <><Loader></Loader></>;
 
-    if (error) return <p>Error: {error.message}</p>;
+    if (error) return  <Navigate to="*" />;
 
     return <>
         <ButtonBack link={"/projets"}></ButtonBack>

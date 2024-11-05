@@ -1,5 +1,5 @@
-import React, {useEffect, useState} from "react";
-import {Link} from "react-router-dom";
+import React from "react";
+import {Link, Navigate} from "react-router-dom";
 import '../../assets/css/home.css'
 import '../../App.css'
 import {useFetch} from "../../hooks/useApi.jsx";
@@ -12,9 +12,9 @@ export default function Root() {
     const { data: medias, loading: loading2, error: error2 } = useFetch(getMedias);
 
     if (loading) return <><Loader></Loader></>;
-    if (error) return <p>Error: {error.message}</p>;
+    if (error) return  <Navigate to="*" />;
     if (loading2) return <><Loader></Loader></>;
-    if (error2) return <p>Error: {error.message}</p>;
+    if (error2) return  <Navigate to="*" />;
     console.log(medias)
 
     return (

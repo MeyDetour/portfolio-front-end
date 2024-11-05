@@ -3,13 +3,13 @@ import {useFetch} from "../../hooks/useApi.jsx";
 import '../../assets/css/projects.css'
 import Loader from "../common/loader.jsx";
 import {ButtonBack} from "../common/buttonBack.jsx";
-import {Link} from "react-router-dom";
+import {Link, Navigate} from "react-router-dom";
 import {getProjects} from "../../api/api.js";
 
 export default function Projects() {
     const {data, loading, error} = useFetch(getProjects)
     if (loading) return <><Loader></Loader></>;
-    if (error) return <p>Error: {error.message}</p>;
+    if (error) return  <Navigate to="*" />;
 
     return <>
         <ButtonBack link="/"></ButtonBack>
