@@ -126,7 +126,14 @@
 }
 
 
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 950px) {
+
+    .contactcontainer h1 {
+        font-size: 47px;
+    }
+}
+
+@media only screen and (max-width: 830px) {
     .bandeau{
         display: none;
     }
@@ -146,6 +153,17 @@
     }
     .contactContentTexts{
         height: fit-content;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    .contactcontainer h1 {
+        font-size: 32px;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .contactcontainer h1 {
+        font-size: 25px;
     }
 }
 
