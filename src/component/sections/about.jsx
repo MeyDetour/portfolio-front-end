@@ -23,7 +23,7 @@ export default function About() {
     if (loading) return <><Loader></Loader></>;
 
     if (error) return <p>Error: {error.message}</p>;
-    if (loading2) return <><Loader></Loader></>;
+    if (loading2) return <><Loader></Loader></>
 
     if (error2) return <p>Error: {error.message}</p>;
 
@@ -35,13 +35,16 @@ export default function About() {
                 <div className="firstDescription w50p flexCol">
                     <h1>A propos</h1>
                     <p>{data.about}</p>
+                    <a className={"button1"} href="src/assets/MEY_DETOUR_CV_pdf.pdf" download="MEY_DETOUR_CV_pdf.pdf">Télécharger
+                        mon cv</a>
+
                     {/*   <div className="flexRow">
                        <Link to={'/certifications'} className="button">Mes certifications</Link>
                        <Link to={'/compétences'} className="button">Mes Compétences</Link>
                         <Link to={'/qualites'} className="button">Mes qualités</Link>
 
                     </div>*/}
-                   </div>
+                </div>
                 <div className="secondDescription w50p flexCol alignEnd">
                     <h1>Dernier project :</h1>
                     <h2> {data2.name}</h2>

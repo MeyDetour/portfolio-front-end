@@ -499,6 +499,43 @@ button {
     border-radius: 4px;
     animation: jump7456 0.5s linear infinite;
 }
+/*=============BUTTON=================*/
+
+.button1{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: black 2px solid;
+    width: fit-content;
+    position: relative;
+    padding: 10px 20px;
+    box-sizing: border-box;
+
+}
+.button1:after{
+    content: "";
+    height: 100%;
+    width: 0%;
+    background: black;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    z-index: -1;
+    transition: all .5s;
+}
+.button1:hover:after{
+
+    width: 100%;
+}
+.button1:hover{
+    color: white;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+/*===============END===========*/
 
 @keyframes jump7456 {
     15% {
