@@ -99,9 +99,14 @@
     position: absolute;
     top: 57%;
     border-radius: 40%;
-    right: 32%;
 }
+.cssError404 .zero .head .eye1 .pupill{
+    right: 32%;
 
+}.cssError404 .zero .head .eye2 .pupill{
+     left: 32%;
+
+}
 .cssError404 .zero .head .eye1 {
 
     top: 33%;
