@@ -1,8 +1,8 @@
 import React from 'react';
-import '../../assets/css/contact.css'
-import '../../assets/css/deroulement.css'
+import '/assets/css/contact.css'
+import '/assets/css/deroulement.css'
 import {ButtonBack} from "../common/buttonBack.jsx";
-import '../../assets/css/tarif.css'
+import '/assets/css/tarif.css'
 import {ButtonNext} from "../common/buttonNext.jsx";
 
 export default function Tarifs() {

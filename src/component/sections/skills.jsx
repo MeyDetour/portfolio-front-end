@@ -1,6 +1,6 @@
 import React from 'react';
 import {useFetch} from "../../hooks/useApi.jsx";
-import '../../assets/css/skills.css'
+import '/assets/css/skills.css'
 import Loader from "../common/loader.jsx";
 import {ButtonBack} from "../common/buttonBack.jsx";
 import {getAllTechnologies} from "../../api/api.js";

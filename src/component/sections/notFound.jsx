@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../assets/css/notfound.css'
+import '/assets/css/notfound.css'
 import {Link} from "react-router-dom";
 export default function  NotFound (){
 
@@ -29,3 +29,7 @@ export default function  NotFound (){
         </div>
     )
 }
+
+
+
+//gobuster -u http://fakebank.thm -w wordlist.txt dir

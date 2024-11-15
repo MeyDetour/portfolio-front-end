@@ -1,6 +1,6 @@
 import React from 'react';
 import {  useProject} from "../../hooks/useApi.jsx";
-import '../../assets/css/projects.css'
+import '/assets/css/projects.css'
 import Loader from "../common/loader.jsx";
 import {Navigate, useParams} from 'react-router-dom';
 import {ButtonBack} from "../common/buttonBack.jsx";

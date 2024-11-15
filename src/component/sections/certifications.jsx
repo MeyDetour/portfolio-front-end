@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../assets/css/certification.css'
+import '/assets/css/certification.css'
 
 export default function Certifications() {
     return <>
@@ -18,10 +18,10 @@ export default function Certifications() {
                 <h1>Certifications</h1>
             </div>
             <div className=" certifications">
-                <a className={""} href="src/assets/Fundamentals of digital marketing _ Google.pdf"
+                <a className={""} href="/assets/Fundamentals of digital marketing _ Google.pdf"
                    download="Fundamentals of digital marketing _ Google.pdf">Télécharger la certification : "Les principes fondamentaux
                     du marketing digital" de Google</a>
-                <a className={""} href="src/assets/rgpd_secnum.pdf" download="rgpd_secnum.pdf">Télécharger la certification :
+                <a className={""} href="/assets/rgpd_secnum.pdf" download="rgpd_secnum.pdf">Télécharger la certification :
                     Formation sur la RGPD de SecNumAcadémie</a>
             </div>
         </div>

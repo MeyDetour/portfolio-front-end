@@ -13,7 +13,7 @@ body {
     letter-spacing: 4%;
     text-align: left;
 
-    background-image: url("/src/assets/images/background.png");
+    background-image: url("/assets/images/background.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
