@@ -1,5 +1,5 @@
 import React, {useEffect, useRef, useState} from 'react';
-import '/assets/css/quality.css'
+import '/public/css/quality.css'
 import {ButtonBack} from "../common/buttonBack.jsx";
 import {useFetch} from "../../hooks/useApi.jsx";
 import {getQualities} from "../../api/api.js";
@@ -47,7 +47,7 @@ export default function Quality() {
                     }}
                 >
                     <img
-                        src={clickedElements.has(index) ? "/assets/images/icon/sun.svg" : "/assets/images/icon/poulpe.svg"}
+                        src={clickedElements.has(index) ? "/public/images/icon/sun.svg" : "/public/images/icon/poulpe.svg"}
                         className="mb-1"
                         alt="icone de poulpe"
                     />

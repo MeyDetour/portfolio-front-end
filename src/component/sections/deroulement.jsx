@@ -1,5 +1,5 @@
 import React from 'react';
-import '/assets/css/deroulement.css'
+import '/public/css/deroulement.css'
 import {ButtonBack} from "../common/buttonBack.jsx";
 import {ButtonNext} from "../common/buttonNext.jsx";
 

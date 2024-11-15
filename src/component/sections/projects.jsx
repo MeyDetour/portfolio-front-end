@@ -1,6 +1,6 @@
 import React from 'react';
 import {useFetch} from "../../hooks/useApi.jsx";
-import '/assets/css/projects.css'
+import '/public/css/projects.css'
 import Loader from "../common/loader.jsx";
 import {ButtonBack} from "../common/buttonBack.jsx";
 import {Link, Navigate} from "react-router-dom";
@@ -29,7 +29,7 @@ export default function Projects() {
             <div className="projectsContainer">
                 {data.map((proj)=>(
                     <Link key={proj.id} to={`/projet/${proj.id}`}>
-                       <img src={proj.image ? proj.image : '/assets/images/gaelleGhizoli.png'} alt={proj.imageName}/>
+                       <img src={proj.image ? proj.image : '/public/images/gaelleGhizoli.png'} alt={proj.imageName}/>
                     </Link>
                 ))}
             </div>

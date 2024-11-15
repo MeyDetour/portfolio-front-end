@@ -1,6 +1,6 @@
 import React from 'react';
 import {useFetch} from "../../hooks/useApi.jsx";
-import '/assets/css/contact.css'
+import '/public/css/contact.css'
 import Loader from "../common/loader.jsx";
 import { Navigate} from 'react-router-dom';
 import {getMedias} from "../../api/api.js";
@@ -49,7 +49,7 @@ export default function Contact() {
                         entendre. </p>
                     <p>N'hésitez pas à me contacter via le formulaire ci-dessous ou par mes coordonnées fournies. Je
                         m'efforcerai de répondre à votre message dans les plus brefs délais.</p>
-                    <a className={"button1"} href="/assets/MEY_DETOUR_CV_pdf.pdf" download="MEY_DETOUR_CV_pdf.pdf">Télécharger mon cv</a>
+                    <a className={"button1"} href="/MEY_DETOUR_CV_pdf.pdf" download="MEY_DETOUR_CV_pdf.pdf">Télécharger mon cv</a>
                     {/*
                         <Link className="button mt-3" to="/deroulement">Me contacter pour un projet</Link>*/}
 

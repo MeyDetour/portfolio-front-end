@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {useFetch} from "../../hooks/useApi.jsx";
 import {ButtonBack} from "../common/buttonBack.jsx";
-import '/assets/css/about.css'
+import '/public/css/about.css'
 import {getLastProject, getTexts} from "../../api/api.js";
 import Loader from "../common/loader.jsx";
 import {Navigate} from "react-router-dom";
@@ -35,7 +35,7 @@ export default function About() {
                 <div className="firstDescription w50p flexCol">
                     <h1>A propos</h1>
                     <p>{data.about}</p>
-                    <a className={"button1"} href="/assets/MEY_DETOUR_CV_pdf.pdf" download="MEY_DETOUR_CV_pdf.pdf">Télécharger
+                    <a className={"button1"} href="/MEY_DETOUR_CV_pdf.pdf" download="MEY_DETOUR_CV_pdf.pdf">Télécharger
                         mon cv</a>
 
                     {/*   <div className="flexRow">

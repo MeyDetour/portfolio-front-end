@@ -7,7 +7,7 @@ export const ButtonNext = ({link,text}) => {
             <>
 
                 <Link className="nextButton" to={link}> {text}
-                    <img src="/assets/images/icon/nextArrow.svg" alt="icone de fleche"/>
+                    <img src="/images/icon/nextArrow.svg" alt="icone de fleche"/>
                 </Link>
 </>
     );

@@ -9,10 +9,10 @@ export const ButtonBack = ({link}) => {
         <>
 
             <Link className="backButton" to={link}>
-                <img src={!isUrlContact?"/assets/images/icon/arrow.svg":"/assets/images/icon/blackArrow.svg"} alt="icone de fleche"/> Retour
+                <img src={!isUrlContact?"/public/images/icon/arrow.svg":"/public/images/icon/blackArrow.svg"} alt="icone de fleche"/> Retour
             </Link>
             <Link className="backButtonSvgCroix" to={link}>
-            <img src="/assets/images/icon/close.svg" className={"closeIcon"} alt="icone de la croix"/>
+            <img src="/images/icon/close.svg" className={"closeIcon"} alt="icone de la croix"/>
         </Link>
         </>
     );

@@ -1,6 +1,6 @@
 import React from "react";
 import {Link, Navigate} from "react-router-dom";
-import '/assets/css/home.css'
+import '/public/css/home.css'
 import '../../App.css'
 import {useFetch} from "../../hooks/useApi.jsx";
 import Loader from "../common/loader.jsx";
@@ -20,7 +20,7 @@ export default function Root() {
     return (
         <>
             <div className={`homePage alignCenter h100p " : ""}`}>
-                <img className={'imageMeyDetour'} src="/assets/images/MeyDetour.png"
+                <img className={'imageMeyDetour'} src="/images/MeyDetour.png"
                      alt="Portrait stylisé de la développeuse Mey Detour"></img>
                 <div className={"intro  alignEnd"}>
 
@@ -31,19 +31,19 @@ export default function Root() {
                         <ul>
                             <li>
                                 <Link className={"flexCol alignCenter"} to="/about">
-                                    <img className="mb-2" src="/assets/images/icon/about.svg" alt="Icone À propos"/>
+                                    <img className="mb-2" src="/images/icon/about.svg" alt="Icone À propos"/>
                                     <span>À propos</span>
                                 </Link>
                             </li>
                             <li>
                                 <Link className={"flexCol alignCenter"} to="/projets">
-                                    <img className="mb-2" src="/assets/images/icon/project.svg" alt="Icone Projets"/>
+                                    <img className="mb-2" src="/images/icon/project.svg" alt="Icone Projets"/>
                                     <span>Projets</span>
                                 </Link>
                             </li>
                             <li>
                                 <Link className={"flexCol alignCenter"} to="/contact">
-                                    <img className="mb-2" src="/assets/images/icon/contact.svg" alt="Icone Contact"/>
+                                    <img className="mb-2" src="/images/icon/contact.svg" alt="Icone Contact"/>
                                     <span>Contact</span>
                                 </Link>
                             </li>
