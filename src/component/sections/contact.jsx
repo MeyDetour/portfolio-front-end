@@ -41,7 +41,7 @@ export default function Contact() {
                 <div className="contactContentTexts  ">
 
                     <h1 className="red">Me contacter</h1>
-                    <p>Mail : meydetour@gmail.com</p>
+                    <p>Mail : contact@meydetour.com</p>
                     <p>
                         Je suis toujours ravi de rencontrer de nouvelles personnes et d'explorer de potentielles
                         opportunités. Que vous ayez des questions sur mes projets, que vous souhaitiez discuter
