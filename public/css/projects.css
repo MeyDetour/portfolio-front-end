@@ -5,7 +5,8 @@
     display: flex;
     flex-direction: row;
     width: 100%;
-    justify-content: space-between;
+    justify-content: start;
+    gap: 2%;
     animation : slice 1s ;
 }
 .projectsContainer a {
@@ -75,7 +76,7 @@ width: 32%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: start;
+    justify-content: space-between;
 
 }
 .projectContainer >img{
