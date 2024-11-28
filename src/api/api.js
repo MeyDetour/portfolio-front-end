@@ -10,7 +10,7 @@ export const fetchData = async (endpoint) => {
             credentials: 'include'
         });
         if (!response.ok) {
-            throw NotFound;
+            throw new Error(`HTTP error! Status: ${response.status}`);
         }
         return response.json();
     } catch (error) {
