@@ -17,6 +17,7 @@ export const useProject = (id) => {
                 setProject(data);
             } catch (err) {
                 setError(err);
+                console.log(err)
             } finally {
                 setLoading(false);
             }
