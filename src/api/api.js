@@ -9,8 +9,10 @@ export const fetchData = async (endpoint) => {
             headers: { 'Content-Type': 'application/json' },
             credentials: 'include'
         });
+        console.log("success")
         if (!response.ok) {
 
+            console.log("not ok")
             throw new Error(`HTTP error! Status: ${response.status}`);
         }
         return response.json();
