@@ -15,6 +15,8 @@ export const useProject = (id) => {
             try {
                 const data = await getProject(id);
                 setProject(data);
+                console.error(data);
+
             } catch (err) {
                 setError(err);
                 console.error("Erreur fetchProject :", err.message);
