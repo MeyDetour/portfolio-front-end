@@ -18,9 +18,13 @@ export const useProject = (id) => {
                 console.log(data);
 
             } catch (err) {
-                setError(err);
-                console.log("Erreur fetchProject :", err.message);
-
+                console.error("Erreur API :", err.message);
+                if (err.message === "unvisible project") {
+                    // Traitez ce cas de manière spécifique
+                    setError("Ce projet est invisible.");
+                } else {
+                    setError(err.message);
+                }
             } finally {
                 setLoading(false);
             }

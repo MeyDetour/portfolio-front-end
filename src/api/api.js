@@ -11,10 +11,10 @@ export const fetchData = async (endpoint) => {
         });
         console.log("success")
         if (!response.ok) {
-
-            console.log("not ok")
-            throw new Error(`HTTP error! Status: ${response.status}`);
+            const errorData = await response.json(); // Lire le contenu JSON
+            throw new Error(errorData.message || `HTTP error! Status: ${response.status}`);
         }
+
         return response.json();
     } catch (error) {
 
