@@ -1,3 +1,4 @@
+import NotFound from "../component/sections/notFound.jsx";
 
 
 const API_URL = 'https://backend.meydetour.com/';
@@ -8,6 +9,9 @@ export const fetchData = async (endpoint) => {
             headers: { 'Content-Type': 'application/json' },
             credentials: 'include'
         });
+        if (!response.ok) {
+            throw NotFound;
+        }
         return response.json();
     } catch (error) {
         throw error;
