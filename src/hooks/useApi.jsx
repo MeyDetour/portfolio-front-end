@@ -17,13 +17,14 @@ export const useProject = (id) => {
                 setProject(data);
             } catch (err) {
                 setError(err);
-                console.log(err)
+                console.error("Erreur fetchProject :", err.message);
+
             } finally {
                 setLoading(false);
             }
         };
         fetchProject();
-    }, []);
+    }, [id]);
     return { project, loading, error };
 };
 
