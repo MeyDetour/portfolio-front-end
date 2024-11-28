@@ -16,14 +16,18 @@ export const useProject = (id) => {
                 const data = await getProject(id);
                 setProject(data);
                 console.log(data);
-
+                console.error("Erreur API :", data.message);
+                if (data.message === "unvisible project") {
+                    // Traitez ce cas de manière spécifique
+                    setError(true);
+                }
             } catch (err) {
                 console.error("Erreur API :", err.message);
                 if (err.message === "unvisible project") {
                     // Traitez ce cas de manière spécifique
-                    setError("Ce projet est invisible.");
+                    setError(true);
                 } else {
-                    setError(err.message);
+                    setError(false);
                 }
             } finally {
                 setLoading(false);
