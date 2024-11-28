@@ -15,11 +15,11 @@ export const useProject = (id) => {
             try {
                 const data = await getProject(id);
                 setProject(data);
-                console.error(data);
+                console.log(data);
 
             } catch (err) {
                 setError(err);
-                console.error("Erreur fetchProject :", err.message);
+                console.log("Erreur fetchProject :", err.message);
 
             } finally {
                 setLoading(false);
