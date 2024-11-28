@@ -9,6 +9,7 @@ export default function Project() {
     const {projId} = useParams();
 
     const {project, loading, error} = useProject(projId)
+    console.log(projId,loading,error)
     if (loading) return <><Loader></Loader></>;
 
     if (error) return  <Navigate to="*" />;
