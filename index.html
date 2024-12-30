@@ -1,52 +1,56 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="icon" type="image/png" href="https://www.meydetour.com/public/images/meyFavicon.png">
-    <meta name="description" content="Je m'appelle Mey Detour, je suis développeuse web en formation. Découvrez mes projets et contactez-moi !">
-    <meta name="google-site-verification" content="qtVr6rHFfPNSsisn81Y8ofmRVDPrpmsvWQ6HUVdLzhk" />
+    <meta name="description"
+          content="Je m'appelle Mey Detour, je suis développeuse web en formation. Découvrez mes projets et contactez-moi !">
+    <meta name="google-site-verification" content="qtVr6rHFfPNSsisn81Y8ofmRVDPrpmsvWQ6HUVdLzhk"/>
     <meta name="og:title" property="og:title" content="Mey Detour">
     <meta name="robots" content="index, follow">
     <meta property="og:title" content="Mey Detour">
-    <meta property="og:description" content="Je m'appelle Mey Detour, je suis développeuse web en formation. Découvrez mes projets et contactez-moi !">
+    <meta property="og:description"
+          content="Je m'appelle Mey Detour, je suis développeuse web en formation. Découvrez mes projets et contactez-moi !">
     <meta property="og:image" content="https://www.meydetour.com/public/images/bgMeyDetour.png">
     <meta property="og:url" content="https://www.meydetour.com/">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Mey Detour">
-    <meta name="twitter:description" content="Je m'appelle Mey Detour, je suis développeuse web en formation. Découvrez mes projets et contactez-moi !">
+    <meta name="twitter:description"
+          content="Je m'appelle Mey Detour, je suis développeuse web en formation. Découvrez mes projets et contactez-moi !">
     <meta name="twitter:image" content="https://www.meydetour.com/public/images/bgMeyDetour.png">
 
 
     <title>Mey Detour Portfolio</title>
     <style>
-      body >span{
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 14px;
-        color: #747474;
-        bottom: 0%;
-        cursor: pointer;
-      }
+        body > span {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 14px;
+            color: #747474;
+            bottom: 0%;
+            cursor: pointer;
+        }
 
     </style>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-    <span onclick="openMentionLegal()">Mentions légales</span>
+</head>
+<body>
+<div id="root"></div>
+<script type="module" src="/src/main.jsx"></script>
+<span onclick="openMentionLegal()">Mentions légales</span>
 
-    <script>
-      function openMentionLegal() {
-        window.location.href = "/mentionslegales"
-      }
-      let uri =  window.location.pathname
-      if (uri.match(/mentionslegales/)) {
-       document.querySelector("body > span").style.display = "none"
+<script>
+    function openMentionLegal() {
+        let uri = window.location.pathname
+        if (!uri.match(/mentionslegales/)) {
 
-      }
-    </script>
-  </body>
+            window.location.href = "/mentionslegales"
+        }
+    }
+
+
+</script>
+</body>
 
 </html>
