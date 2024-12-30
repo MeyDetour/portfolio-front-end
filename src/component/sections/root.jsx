@@ -20,6 +20,7 @@ export default function Root() {
     return (
         <>
             <div className={`homePage alignCenter h100p " : ""}`}>
+
                 <img className={'imageMeyDetour'} src="/images/MeyDetour.png"
                      alt="Portrait stylisé de la développeuse Mey Detour"></img>
                 <div className={"intro  alignEnd"}>
@@ -52,8 +53,11 @@ export default function Root() {
                 </div>
                 <div className={"socialIcon flexCol"}>
                     {medias.map(media => (
-                        <><a key={media.link} target={"_blank"} href={media.link}><img src={media.image} alt={`icone de ${media.alt}`}/></a></>
+                        <><a key={media.link} target={"_blank"} href={media.link}><img src={media.image}
+                                                                                       alt={`icone de ${media.alt}`}/></a></>
                     ))}
+
+
                 </div>
             </div>
 

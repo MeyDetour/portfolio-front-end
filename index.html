@@ -19,9 +19,34 @@
 
 
     <title>Mey Detour Portfolio</title>
+    <style>
+      body >span{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 14px;
+        color: #747474;
+        bottom: 0%;
+        cursor: pointer;
+      }
+
+    </style>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <span onclick="openMentionLegal()">Mentions légales</span>
+
+    <script>
+      function openMentionLegal() {
+        window.location.href = "/mentionslegales"
+      }
+      let uri =  window.location.pathname
+      if (uri.match(/mentionslegales/)) {
+       document.querySelector("body > span").style.display = "none"
+
+      }
+    </script>
   </body>
+
 </html>

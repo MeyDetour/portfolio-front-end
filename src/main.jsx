@@ -13,6 +13,7 @@ import Projects from "./component/sections/projects";
 import Project from "./component/sections/project";
 import Contact from "./component/sections/contact";
 import NotFound from "./component/sections/notFound.jsx";
+import Mentiosnlegales from "./component/sections/mentiosnlegales.jsx";
 
 
 const router = createBrowserRouter([
@@ -43,8 +44,12 @@ const router = createBrowserRouter([
         path: "/contact",
         element: <Contact></Contact>,
     },{
+        path: "/mentionslegales",
+        element: <Mentiosnlegales> </Mentiosnlegales>,
+    },{
         path: "*",
         element: <NotFound></NotFound>,
+
     }/*,{
         path: "/deroulement",
         element: <Deroulement></Deroulement>,

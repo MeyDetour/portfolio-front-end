@@ -73,6 +73,35 @@
 
 }
 
+.informationIcon{
+position: relative;
+}
+.informationIcon  span{
+    position: absolute;
+    bottom: -53%;
+    font-size: 13px;
+    background: #F3E6E3;
+    padding-inline: 21px;
+    left: 50%;
+    border-radius: 11px;
+    transform: translateX(-50%);
+    text-wrap: nowrap;
+    padding-block: 10px;
+    text-align: center;
+}
+
+.informationIcon  span::after{
+    content: "";
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    background: #F3E6E3;
+    rotate: 45deg;
+    top: 8%;
+    z-index: -2;
+    left: 50%;
+    transform: translateX(-50%);
+}
 @keyframes animImg {
     0% {
         transform: scale(0.9);
