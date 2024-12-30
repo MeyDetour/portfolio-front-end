@@ -16,3 +16,9 @@ b{
 .mentionsLegales h2{
     margin-top: 10%;
 }
+@media only screen and (max-width: 1000px) {
+    .mentionsLegales{
+        width: 100%;
+    }
+
+}
