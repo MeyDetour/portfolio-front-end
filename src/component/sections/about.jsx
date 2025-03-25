@@ -35,7 +35,7 @@ export default function About() {
                 <div className="firstDescription w50p flexCol">
                     <h1>A propos</h1>
                     <p>{data.about}</p>
-                    <a className={"button1"} href="/MEY_DETOUR_CV_pdf.pdf" download="MEY_DETOUR_CV_pdf.pdf">Télécharger
+                    <a className={"button1"} href="/MEY_DETOUR_CV.pdf" download="MEY_DETOUR_CV.pdf">Télécharger
                         mon cv</a>
 
                     {/*   <div className="flexRow">
