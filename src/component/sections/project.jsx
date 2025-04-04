@@ -27,13 +27,14 @@ export default function Project() {
 
                         : null}
                      </p>
+                    {project.link && <div className="linkProjectcontainer">
 
-                    <div className="linkProjectcontainer">
                         <a href={project.link} className="linkProject mt-2" target="_blank">
                             Voir le projet
 
                         </a>
                     </div>
+                    }
 
                 </div>
                     <img src={project.image} alt={project.imageName}/>
