@@ -14,43 +14,46 @@ import Project from "./component/sections/project";
 import Contact from "./component/sections/contact";
 import NotFound from "./component/sections/notFound.jsx";
 import Mentiosnlegales from "./component/sections/mentiosnlegales.jsx";
+import Wait from "./component/sections/wait.jsx";
 
 
 const router = createBrowserRouter([
     {
-        path: "/",
-        element: <Root></Root>,
+        path: "/*",
+        element: <Wait></Wait>,
     },
-    {
-        path: "/about",
-        element: <About></About>,
-    },
-    {
-        path: "/certifications",
-        element: <Certifications></Certifications>,
-    },
+    // {
+    //     path: "/about",
+    //     element: <About></About>,
+    // },
+    // {
+    //     path: "/certifications",
+    //     element: <Certifications></Certifications>,
+    // },
   /*  {
         path: "/compétences",
         element: <Skills></Skills>,
     },*/
-    {
-        path: "/projets",
-        element: <Projects></Projects>,
-    },
-    {
-        path: "/projet/:projId",
-        element: <Project></Project>,
-    },{
-        path: "/contact",
-        element: <Contact></Contact>,
-    },{
-        path: "/mentionslegales",
-        element: <Mentiosnlegales> </Mentiosnlegales>,
-    },{
-        path: "*",
-        element: <NotFound></NotFound>,
+    // {
+    //     path: "/projets",
+    //     element: <Projects></Projects>,
+    // },
+    // {
+    //     path: "/projet/:projId",
+    //     element: <Project></Project>,
+    // },{
+    //     path: "/contact",
+    //     element: <Contact></Contact>,
+    // },{
+    //     path: "/mentionslegales",
+    //     element: <Mentiosnlegales> </Mentiosnlegales>,
+    // },{
+    //     path: "*",
+    //     element: <NotFound></NotFound>,
+    //
+    // }
 
-    }/*,{
+    /*,{
         path: "/deroulement",
         element: <Deroulement></Deroulement>,
     },{
